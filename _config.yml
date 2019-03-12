@@ -8,10 +8,10 @@ url:                 ''
 baseurl:             ''
 
 # About/contact
-author:              'Yotam Perlitz'
-  name:              'Yotam Perlitz'
-  url:               'non'
-  email:             'perlitz@gmail.com'
+author:              
+  name:              Yotam Perlitz
+  url:               non
+  email:             perlitz@gmail.com
 
 # Color scheme. Options: red, orange, magenta, cyan, blue, brown
 color-scheme:
