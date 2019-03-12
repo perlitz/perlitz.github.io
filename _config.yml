@@ -1,17 +1,17 @@
 # Built with Jekyll 3.2.0
 
 # Setup
-title:               Ed.
-tagline:             'a jekyll theme for minimal editions'
-description:         'Ed is a Jekyll theme designed for textual editors based on minimal computing principles, and focused on legibility and flexibility.'
+title:               Yotam Perlitz.
+tagline:             'In case I have something to write about'
+description:         'This is here for me to have somewhere to publish things I think are worth publishing'
 url:                 ''
 baseurl:             ''
 
 # About/contact
-author:
-  name:              Alex Gil
-  url:               https://twitter.com/elotroalex
-  email:             colibri.alex@gmail.com
+author:              Yotam Perlitz
+  name:              Yotam Perlitz
+  url:               non
+  email:             perlitz@gmail.com
 
 # Color scheme. Options: red, orange, magenta, cyan, blue, brown
 color-scheme:
