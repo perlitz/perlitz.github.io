@@ -1,17 +1,17 @@
 # Built with Jekyll 3.2.0
 
 # Setup
-title:               Yotam Perlitz.
+title:               'Yotam Perlitz.'
 tagline:             'In case I have something to write about'
 description:         'This is here for me to have somewhere to publish things I think are worth publishing'
 url:                 ''
 baseurl:             ''
 
 # About/contact
-author:              Yotam Perlitz
-  name:              Yotam Perlitz
-  url:               non
-  email:             perlitz@gmail.com
+author:              'Yotam Perlitz'
+  name:              'Yotam Perlitz'
+  url:               'non'
+  email:             'perlitz@gmail.com'
 
 # Color scheme. Options: red, orange, magenta, cyan, blue, brown
 color-scheme:
