@@ -76,6 +76,12 @@
     
       
         
+          <a class="sidebar-nav-item" href="/">Yotam’s site!</a>
+        
+      
+    
+      
+        
       
     
       
@@ -194,8 +200,8 @@
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git clone https://github.com/minicomp/ed.git
 <span class="nv">$ </span><span class="nb">cd </span>ed
-<span class="nv">$ </span>gem <span class="nb">install </span>bundler
-<span class="nv">$ </span>bundle <span class="nb">install</span>
+<span class="nv">$ </span>gem install bundler
+<span class="nv">$ </span>bundle install
 </code></pre></div></div>
 
 <p>That’s it. To see if Ed is working properly we will take advantage of Jekyll’s built in server. You can build the first version of your site and run the jekyll server at the same time by entering:</p>
@@ -249,12 +255,12 @@
 
 <p>Now that rvm and Ruby are set up, we’re ready to install our first gem: Bundler. Bundler is a gem that allows you to install many gems at the same time using Gemfiles, which is a simple list of specific gems that lives in your project folder. Once you install it, you will be ready to run the Gemfile I provided in the source files. To install Bundler:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gem <span class="nb">install </span>bundler
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gem install bundler
 </code></pre></div></div>
 
 <p>You’re very close. Now that Bundler is installed, the final step is to install the right version of Jekyll. To do so run the Gemfile this way (remember you must be inside the <code class="highlighter-rouge">ed</code> folder for this to work):</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>bundle <span class="nb">install</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>bundle install
 </code></pre></div></div>
 
 <p>If you don’t get any errors, Ed should work at this point. To see if Ed is working properly we will take advantage of Jekyll’s built in server. You can build the first version of your site and run the jekyll server at the same time by entering:</p>
