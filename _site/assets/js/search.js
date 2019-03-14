@@ -15,7 +15,7 @@ index.addDoc({
   title: "My Favorite Films",
   author: "Yotam Perlitz",
   layout: "post",
-  content: "This is an ongoing list of my favorite films, all of the movies in the list are such that ?I consider either intresting, importent of just fun, I have choosen to add Rotten-Tomatoes top-critic score which I find to be the most informative of the scores. Enjoy the list :)\n\n\n  The Square (2017) (rt-tc : 77%)\n\n\nA Ruben Östlund film about modern art, modern civilization and how they went wrong.\n\n\n  FORCE MAJEURE (2015) (rt-tc : 94%)\n\n\nA Ruben Östlund film about an unexpected turn of events\n",
+  content: "This is an ongoing list of no particular order containing some of favorite films, all of the movies in the list are such that I consider either intresting, importent of just fun.\n\nI have choosen to add Rotten-Tomatoes top-critic score1 which I find to be the most informative of the scores2. Enjoy the list :)\n\n\n  The Square (2017) (77%)\n\n\nA Ruben Östlund film about modern art, modern civilization and how they went wrong.\n\n\n  FORCE MAJEURE (2015) (94%)\n\n\nA Ruben Östlund film about an unexpected turn of events\n\n\n  Elle (2016) (85%)\n\n\nA Paul Verhoeven film featuring an amazing performance by  Isabelle Huppert about a strong person handeling a weak spot.\n\n\n  Things to come. (100%)\n\n\nA Mia Hansen-Løve film featuring Isabelle Huppert about the decision we make in life.\n\n\n  There will be blood (94%)\n\n\nA Paul Thomas Anderson film featuring Daniel Day-Lewis at his best about a miner during the black gold rush. The film is strong and troubling, combined with one of the best soundtracks I heard by Radiohead’s Jonny Greenwood, it is a must.\n\n\n  SPIDER-MAN: INTO THE SPIDER-VERSE (95%)\n\n\nA Bob Persichetti, Peter Ramsey, Rodney Rothman Film\n\n\n  \n    \n      Rotten Tommatoes top critics score is a score made by averaging over ~30 professional critics from major newspapers, each critic gives a yey or ney, if for example a film gets a score of 80%, it means that 8 out of every 10 top critics would recommend watching the film. &#x21a9;&#xfe0e;\n    \n    \n      Another good indication which I learned from Shira is looking at the reviews by the NY and LA times, I find that I can trust their opinion. &#x21a9;&#xfe0e;\n    \n  \n\n",
   id: 0
 });
 console.log( jQuery.type(index) );
@@ -25,7 +25,7 @@ var store = [{
   "title": "My Favorite Films",
   "author": "Yotam Perlitz",
   "layout": "post",
-  "link": "/texts/another-one/",
+  "link": "/texts/My%20favorite%20films/",
 }
 ]
 

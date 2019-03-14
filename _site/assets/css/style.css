@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6 { font-family: sans-serif; margin-bottom: .5rem; font-wei
 
 h1 { font-size: 1.4rem; }
 
-h1.text-title { font-size: 1.8rem; }
+h1.text-title { font-size: 2rem; }
 
 h2 { margin-top: 1rem; font-size: 1.2rem; }
 
@@ -277,7 +277,7 @@ sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: b
 
 sup { top: -0.5em; }
 
-.footnotes { line-height: 1.2rem; font-size: 0.9rem; letter-spacing: .01rem; }
+.footnotes { line-height: 0.9rem; font-size: 0.7rem; letter-spacing: .01rem; }
 
 .footnotes .foot-block { display: inline-block; padding: 0 4rem 0 2rem; margin-bottom: .8rem; font-style: italic; }
 
