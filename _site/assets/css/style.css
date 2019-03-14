@@ -109,7 +109,7 @@ h1 {
   font-size: 1.4rem; }
 
 h1.text-title {
-  font-size: 1.4rem; }
+  font-size: 1.8rem; }
 
 h2 {
   margin-top: 1rem;
@@ -273,7 +273,7 @@ h3.masthead-title {
   top: 0;
   bottom: 0;
   left: -14rem;
-  width: 14rem;
+  width: 8rem;
   visibility: hidden;
   overflow-y: auto;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
@@ -281,8 +281,8 @@ h3.masthead-title {
   /* 15px*/
   color: rgba(255, 255, 255, 0.6);
   background-color: #202020;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out; }
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out; }
 
 @media (min-width: 30em) {
   .sidebar {
@@ -421,7 +421,7 @@ a.sidebar-nav-item:focus {
 
 .layout-reverse .sidebar-toggle {
   left: auto;
-  right: 1rem; }
+  right: 14rem; }
 
 .layout-reverse #sidebar-checkbox:checked ~ .sidebar,
 .layout-reverse #sidebar-checkbox:checked ~ .wrap,
@@ -464,7 +464,7 @@ a.sidebar-nav-item:focus {
   background-color: #ac4142; }
 
 .theme-base-red .container a,
-.theme-base-red .sidebar-toggle,
+.theme-base-red .sidebar-checkbox,
 .theme-base-red .related-posts li a:hover {
   color: #ac4142; }
 

@@ -3,14 +3,14 @@
 # Setup
 title:               'Yotam Perlitz.'
 tagline:             'In case I have something to write about'
-description:         'This is here for me to have somewhere to publish things I think are worth publishing'
-url:                 ''
+description:         'Content'
+url:                 'perlitz@github.io'
 baseurl:             ''
 
 # About/contact
 author:              
   name:              Yotam Perlitz
-  url:               non
+  url:               perlitz@github.io
   email:             perlitz@gmail.com
 
 # Color scheme. Options: red, orange, magenta, cyan, blue, brown
