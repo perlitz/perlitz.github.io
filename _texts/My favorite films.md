@@ -6,17 +6,15 @@ date: 12/02/1988
 
 ---
 
-This is an ongoing list of no particular order containing some of favorite films, all of the movies in the list are such that I consider either intresting, importent of just fun. 
-
-I have choosen to add Rotten-Tomatoes top-critic score[^1] which I find to be the most informative of the scores[^2]. Enjoy the list :)
+This is an ongoing list of no particular order containing some of favorite films, all of the movies in the list are such that I consider either intresting, importent of just fun. I have choosen to add Rotten-Tomatoes top-critic score[^1] which I find to be the most informative of the scores[^2]. Enjoy the list :)
 
 - [The Square (2017)](https://www.rottentomatoes.com/m/the_square_2017) (77%)  
 
-A Ruben Östlund film about modern art, modern civilization and how they went wrong. 
+A Ruben Östlund film about modern art, modern civilization and how they went wrong.
 
 - [FORCE MAJEURE (2015)](https://www.rottentomatoes.com/m/force_majeure_2014) (94%)  
 
-A Ruben Östlund film about an unexpected turn of events
+A Ruben Östlund film about an unexpected turn of events.
 
 - [Elle (2016)](https://www.rottentomatoes.com/m/elle_2016) (85%)  
 
@@ -28,11 +26,11 @@ A Mia Hansen-Løve film featuring Isabelle Huppert about the decision we make in
 
 - [There will be blood](https://www.rottentomatoes.com/m/there_will_be_blood) (94%)
 
-A Paul Thomas Anderson film featuring Daniel Day-Lewis at his best about a miner during the black gold rush. The film is strong and troubling, combined with one of the best soundtracks I heard by Radiohead's Jonny Greenwood, it is a must.
+A Paul Thomas Anderson film featuring Daniel Day-Lewis at his best about a miner during the black gold rush. The film is strong and troubling, combined with one of the best soundtracks I heard by Radiohead's Jonny Greenwood, it is a must. 
 
-- [SPIDER-MAN: INTO THE SPIDER-VERSE](https://www.rottentomatoes.com/m/spider_man_into_the_spider_verse) (95%)
+- [SPIDER-MAN: INTO THE SPIDER-VERSE](https://www.rottentomatoes.com/m/spider_man_into_the_spider_verse) (95%) 
 
-A Bob Persichetti, Peter Ramsey, Rodney Rothman Film 
+A Bob Persichetti, Peter Ramsey, Rodney Rothman Film (…………….) 
 
 
 

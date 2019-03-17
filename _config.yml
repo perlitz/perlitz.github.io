@@ -47,4 +47,4 @@ exclude:
 
 # Theme
 theme: "ed."
-remote_theme: minicomp/ed
+#remote_theme: minicomp/ed
