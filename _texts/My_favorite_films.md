@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: page
 title: My Favorite Films
 author: Yotam Perlitz
-date: 12/02/1988
+date: 15/03/2019
 
 ---
 
@@ -20,17 +20,17 @@ A Ruben Östlund film about an unexpected turn of events.
 
 A Paul Verhoeven film featuring an amazing performance by  Isabelle Huppert about a strong person handeling a weak spot.
 
-- [Things to come](https://www.rottentomatoes.com/m/things_to_come_2016). (100%) 
+- [Things to come](https://www.rottentomatoes.com/m/things_to_come_2016). (100%)
 
 A Mia Hansen-Løve film featuring Isabelle Huppert about the decision we make in life.
 
 - [There will be blood](https://www.rottentomatoes.com/m/there_will_be_blood) (94%)
 
-A Paul Thomas Anderson film featuring Daniel Day-Lewis at his best about a miner during the black gold rush. The film is strong and troubling, combined with one of the best soundtracks I heard by Radiohead's Jonny Greenwood, it is a must. 
+A Paul Thomas Anderson film featuring Daniel Day-Lewis at his best about a miner during the black gold rush. The film is strong and troubling, combined with one of the best soundtracks I heard by Radiohead's Jonny Greenwood, it is a must.
 
-- [SPIDER-MAN: INTO THE SPIDER-VERSE](https://www.rottentomatoes.com/m/spider_man_into_the_spider_verse) (95%) 
+- [SPIDER-MAN: INTO THE SPIDER-VERSE](https://www.rottentomatoes.com/m/spider_man_into_the_spider_verse) (95%)
 
-A Bob Persichetti, Peter Ramsey, Rodney Rothman Film (…………….) 
+A Bob Persichetti, Peter Ramsey, Rodney Rothman Film (…………….)
 
 
 
