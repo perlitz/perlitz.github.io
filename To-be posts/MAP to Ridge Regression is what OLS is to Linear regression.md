@@ -1,0 +1,3 @@
+# MAP to Ridge Regression is what OLS is to Linear regression
+
+From the point of view of [Bayesian inference](https://en.wikipedia.org/wiki/Bayesian_inference), MLE is a special case of [maximum a posteriori estimation](https://en.wikipedia.org/wiki/Maximum_a_posteriori_estimation) (MAP) that assumes a [uniform](https://en.wikipedia.org/wiki/Uniform_distribution_(continuous)) [prior distribution](https://en.wikipedia.org/wiki/Prior_probability) of the parameters. 
