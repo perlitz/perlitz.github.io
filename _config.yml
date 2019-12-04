@@ -1,1 +1,5 @@
-theme: jekyll-theme-minimal
+theme: Indigo
+
+name: Yotam Perlitz
+bio: 'A Man who travels the world eating noodles'
+picture: 'assets/images/profile.jpg'
