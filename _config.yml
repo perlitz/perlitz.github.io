@@ -1,6 +1,6 @@
 # main text of home
 name: Yotam Perlitz
-bio: A Man who travels the world eating noodles
+bio: In case I have something to write about
 
 # twitter summary info
 description: A blog about technology and stuff related
@@ -56,7 +56,7 @@ email: myemail@gmail.com
 authors:
     Yotam:
         name: Yotam Perlitz
-        bio: In case I have something to write about
+        bio: bio
         external-image: false
         picture: assets/images/profile.jpg
         twitter: johndoe
