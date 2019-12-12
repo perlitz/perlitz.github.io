@@ -1,6 +1,6 @@
 # main text of home
 name: Yotam Perlitz
-bio: In case I have something to write about
+bio: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 
 # twitter summary info
 description: A blog about technology and stuff related
@@ -30,7 +30,7 @@ permalink: /:title/
 
 # if you don't want comments in your posts, leave categories empty
 disqus:
-  shortname: mydisqus # enter this from your disqus account
+  shortname: yotam # enter this from your disqus account
   categories: [blog, project] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
@@ -39,19 +39,19 @@ disqus:
 # google: mygoogle
 # instagram: myinstagram
 # pinterest: mypinterest
-linkedin: mylinkedin
+linkedin: https://www.linkedin.com/in/yotam-perlitz
 # youtube: myyoutube
 # spotify: myspotify
-github: mygithub
+github: https://github.com/perlitz
 # gitlab: mygitlab
 # lastfm: mylastfm
 # stackoverflow: 7044681/mystackoverflow
 # quora: userquora
 reddit: username
-medium: medium
+medium: https://medium.com/@perlitz
 # vimeo: myvimeo
 # lanyrd: mylanyrd
-email: myemail@gmail.com
+email: perlitz@gmail.com
 
 authors:
     Yotam:
@@ -59,7 +59,7 @@ authors:
         bio: bio
         external-image: false
         picture: assets/images/profile.jpg
-        twitter: johndoe
+        #twitter: johndoe
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
