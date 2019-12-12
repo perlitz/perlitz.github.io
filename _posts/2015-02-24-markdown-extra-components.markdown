@@ -36,6 +36,8 @@ You can pick as item to see how to apply in markdown.
 
 You can try the evidence!
 
+$$ E = mc^{2} $$
+
 <span class="evidence">Paragraphs can be written like so. A paragraph is the basic block of Markdown. A paragraph is what text will turn into when there is no reason it should become anything else.</span>
 
 {% highlight html %}
