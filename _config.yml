@@ -13,8 +13,8 @@ picture: assets/images/profile.jpg
 # If you want to include your resume, set to true
 # and specify source (external or local).
 resume: true
-resume-external: true
-resume-url: https://docs.google.com/document/d/e/2PACX-1vR8S_El5oyztot6jSL-t9xzkWGuwZpN7A_Lm_DuzmbWJZ9AX4PbdA0VHXf1Cih4b6u1UytfTNMf8osl/pub
+resume-external: false
+resume-url: assets/Yotam_Perlitz_CV_01_19.pdf
 
 url: https://perlitz.github.io
 # your url: http://USERNAME.github.io
