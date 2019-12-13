@@ -8,11 +8,12 @@ tag:
 - RNN
 - PyTorch
 - NLP
-  star: false
-  category: blog
-  author: yotam
-  description: A simple character prediction excercise 
+star: false
+category: blog
+author: yotam
+description: A simple character prediction excercise 
 ---
+
   Begin with the imports:
 
 ```python
