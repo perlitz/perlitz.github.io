@@ -12,8 +12,6 @@ author: yotam
 description: A simple Pandas tutorial
 ---
 
-By: Yotam Perlitz
-
 This is a small summary of pandas commands, it represents a small set of most needed DataFrame manipulation, in case a deeper dive in to the subject is wanted, check out this [much better tutorial](https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html).
 
 Import pandas
