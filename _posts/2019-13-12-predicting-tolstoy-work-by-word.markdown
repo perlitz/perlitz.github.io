@@ -1,3 +1,4 @@
+---
 title: "Predicting Tolstoy"
 layout: post
 date: 2019-12-13 22:44
@@ -11,7 +12,7 @@ tag:
   category: blog
   author: yotam
   description: A simple character prediction excercise 
-
+---
   Begin with the imports:
 
 ```python
