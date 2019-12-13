@@ -6,7 +6,7 @@ image: /assets/images/markdown.jpg
 headerImage: false
 tag:
 - pandas
-star: true
+star: false
 category: blog
 author: yotam
 description: A simple Pandas tutorial
