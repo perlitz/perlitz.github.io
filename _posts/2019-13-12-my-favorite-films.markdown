@@ -3,7 +3,7 @@ title: "My Favorite Films"
 layout: post
 date: 15/03/2019
 author: Yotam Perlitz
-Tag: 
+Tag:
 - arts
 star: true
 category: blog
@@ -12,7 +12,7 @@ author: yotam
 description: A list of movies I like
 ---
 
-This is an ongoing list of no particular order containing some of favorite films, all of the movies in the list are such that I consider either intresting, importent of just fun. I have choosen to add Rotten-Tomatoes top-critic score[^1] which I find to be the most informative of the scores. Enjoy the list :)
+This is an ongoing list of no particular order containing some of favorite films, all of the movies in the list are such that I consider either interesting, important of just fun. I have chosen to add Rotten-Tomatoes top-critic score[^1] which I find to be the most informative of the scores. Enjoy the list :)
 
 - [The Square (2017)](https://www.rottentomatoes.com/m/the_square_2017) (77%)  
 
