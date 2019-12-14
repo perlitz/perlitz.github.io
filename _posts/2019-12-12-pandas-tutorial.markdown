@@ -12,7 +12,6 @@ author: yotam
 description: A simple Pandas tutorial
 ---
 
-By: Yotam Perlitz
 
 This is a small summary of pandas commands, it represents a small set of most needed DataFrame manipulation, in case a deeper dive in to the subject is wanted, check out this [much better tutorial](https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html).
 
@@ -34,12 +33,6 @@ Write/Read DF as .json:
 ``` python
 my_df.to_json(path_or_buf=path_to_folder+'/my_df_saving_name.json')
 my_df = pd.to_json(path_or_buf=path_to_folder+'/my_df_saving_name.json')
-```
-
-Initialize DataFrame with a few columns:
-
-```python
-si
 ```
 
 Add a row to DF (note the use of ` ignore_index=True`{.python} which tells the DataFrame to set the index as row enumeration, as in a simple list).
