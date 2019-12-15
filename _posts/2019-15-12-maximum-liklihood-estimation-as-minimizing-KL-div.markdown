@@ -13,7 +13,7 @@ author: yotam
 description: Maximum Likelihood Estimation as Minimizing KL-div in Machine learning
 ---
 
-Common supervised machine learning algorithms are usually utilized in order to fulfill some well defined task, usually, given some assumed probability distribution $p_{model}(x;\theta)$ the algorithm learns the model's parameters $\theta$ such that $p_{model} (x;\theta)$ is closest to the *real* probability distribution $p_{data}(x)$.
+Common supervised machine learning algorithms are usually utilized in order to fulfill some well defined task, usually, given some assumed probability distribution $ p_{model}(x;\theta) $ the algorithm learns the model's parameters $\theta$ such that $p_{model} (x;\theta)$ is closest to the *real* probability distribution $p_{data}(x)$.
 
 However, even though intuitivally this closeness of models is the goal, maximization of the (log) likelihood is usually the way it is achived, want to know why? read below.
 
