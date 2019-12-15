@@ -6,14 +6,14 @@ tag: jekyll
 image: https://koppl.in/indigo/assets/images/jekyll-logo-light-solid.png
 headerImage: true
 projects: true
-hidden: false # don't count this post in blog pagination
+hidden: true # don't count this post in blog pagination
 description: "This is a simple and minimalist template for Jekyll for those who likes to eat noodles."
 category: project
 author: johndoe
 externalLink: false
 ---
 
- I want to have $$math$$ in my lines and also
+ I want to have $$math$$ in my lines and also fadsfasdf
 
  $$ Full\ lines\ of\ math $$
 
