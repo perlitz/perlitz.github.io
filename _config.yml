@@ -114,4 +114,6 @@ compress_html:
 exclude: ["travis.sh", "Rakefile", "README.md", "Gemfile", "Gemfile.lock", "FAQ.md"]
 markdown: kramdown
 kramdown:
-   math_engine: mathjax
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
