@@ -3,6 +3,7 @@ layout: compress
 ---
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     {% if site.analytics-google %}
@@ -19,7 +20,7 @@ layout: compress
     <meta property="og:type" content="profile">
 
     {% seo %}
-    
+
     {% include favicon.html %}
 
     <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
@@ -29,6 +30,12 @@ layout: compress
     {% capture scss_sheet %}{% include style.scss %}{% endcapture %}
     {{ scss_sheet | scssify }}
     </style>
+
+
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
+    </script>
+
 
 </head>
 <body>
