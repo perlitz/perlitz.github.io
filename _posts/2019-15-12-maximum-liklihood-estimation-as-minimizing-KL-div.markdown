@@ -1,5 +1,5 @@
 ---
-title: "Maximum Likelihood Estimation as Minimizing $D_{KL}$ in Machine learning"
+title: "Maximum Likelihood Estimation as Minimizing KL-div in Machine learning"
 layout: post
 date: 2019-12-15 22:44
 image: /assets/images/markdown.jpg
@@ -10,7 +10,7 @@ tag:
 star: false
 category: blog
 author: yotam
-description: Maximum Likelihood Estimation as Minimizing $D_{KL}$ in Machine learning
+description: Maximum Likelihood Estimation as Minimizing KL-div in Machine learning
 ---
 
 Common supervised machine learning algorithms are usually utilized in order to fulfill some well defined task, usually, given some assumed probability distribution $p_{model}(x;\theta)$ the algorithm learns the model's parameters $\theta$ such that $p_{model} (x;\theta)$ is closest to the *real* probability distribution $p_{data}(x)$.
