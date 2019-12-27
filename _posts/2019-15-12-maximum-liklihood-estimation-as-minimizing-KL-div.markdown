@@ -37,25 +37,25 @@ $$\begin{align} D_{KL}(p_{data}\vert \vert p_{model}) & \equiv\sum_{i}p_{data}(x
 #### Maximum likelihood estimation
 
  Stating the learning machine objective using using $D_{KL}$ is intuitive, one just wants to minimize $D_{KL}(p_{data}\vert \vert p_{model})$ w.r.t $\theta$ in order to learn the closest possible distribution to the real one. However, we usually seem take a different path by maximizing the [likelihood function](https://en.wikipedia.org/wiki/Likelihood_function):
-
+<div>
 $$\begin{align}\text{Likelihood}_{p_{model}}&=p_{model}(X;\theta)\\&=\prod_{x\in \mathcal{X}} p_{model}(x;\theta) \end{align}$$
-
+</div>
 Assuming x samples are i.i.d.
 
 The process of maximizing the above is termed [*Maximum likelihood estimation*](https://en.wikipedia.org/wiki/Maximum_likelihood_estimation), a process in which the most probable $\theta$ to have produced the observed data is estimated.
-
+<div>
 $$\theta_{MLE}=\text{argmax}_\theta \prod_{x\in \mathcal{X}} p_{model}(x;\theta)$$
-
+</div>
 However, minimizing the above deriving a produt is a hassle (and can easily underflow the numerical precision of the computer), instead, we use the monotonically increasing $log$ function to replace the product with a sum and keep the optimization goal the same since $f(x)$ and $\log f(x)$ will arrive at a maximum for the same $x$. A new optimiztion objective is:
-
+<div>
 $$\theta_{MLE}=\text{argmax}_\theta\ \sum_{x\in\mathcal{X}} \log\left[p_{model}(x;\theta)\right]$$
-
+</div>
 #### Present equivalence optimality requirements
 
 Going back to our objective formalized using $D_{KL}$:
-
+<div>
 $$\begin{align}\theta_{D_{KL}}&= \text{argmin}_\theta\  D_{KL}(p_{data}(x)||p_\theta(x))\\&=\text{argmin}_\theta\  \sum_{x\in\mathcal{X}}\log\left[\frac{p_{data}(x)}{p_\theta(x)}\right]&& \text{Definition of } D_{KL}\\&=\sum_{x\in\mathcal{X}}\left(\require{cancel}\cancel{\text{argmin}_\theta\  \log\left[p_{data}(x)\right]}-\text{argmin}_\theta\  \log\left[p_{model}(x;\theta)\right]\right)&& \log(x/y)=\log(x)-\log(y)\\&=\text{argmin}_\theta\ \sum_{x\in\mathcal{X}}\log\left[p_{model}(x;\theta)\right]&& \text { See (#) below}\\&=\text{argmax}_\theta\ \sum_{x\in\mathcal{X}}\log\left[p_{model}(x;\theta)\right]&& -\text{argmin}_\theta(f_\theta)=\text{argmax}_\theta(f_\theta)\\&=\theta_{MLE}\end{align}$$
-
+</div>
 (#) $\log\left[p_{data}(x)\right]$  is not a function of $\theta$, it does not play the $\text{argmin}_\theta$ game and can be removed.
 
 Indeed we see that optimality of probability distribution modeling under the two apparatuses are in fact equivalent, this (rather trivial) interpretation of MLE as demanding the model to be close to the underling distribution may clear the goal of ML algorithm objectives.  
