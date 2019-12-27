@@ -27,8 +27,9 @@ The plan:
 
 A common tool to evaluate similarity between probability distributions is the *[Kullback–Leibler divergence](https://en.wikipedia.org/wiki/Kullback–Leibler_divergence)* between probability distributions $p_{data}$ and $p_{model}$:
 
-$$\begin{align} D_{KL}(p_{data}||p_{model}) & \equiv\sum_{i}p_{data}(x_i)\log\left[\frac{p_{data}(x_i)}{p_{model}(x_i;\theta)}\right] \\&=\sum_{x\in \mathcal{X}}\log\left[\frac{p_{data}(x)}{p_{model}(x;\theta)}\right]  \end{align}$$
-
+<div>
+$$\begin{align} D_{KL}(p_{data}\vert \vert p_{model}) & \equiv\sum_{i}p_{data}(x_i)\log\left[\frac{p_{data}(x_i)}{p_{model}(x_i;\theta)}\right] \\&=\sum_{x\in \mathcal{X}}\log\left[\frac{p_{data}(x)}{p_{model}(x;\theta)}\right]  \end{align}$$
+</div>
 
  In simple terms, $D_{KL}(p||q)$ gives us the amount of information lost when describing the underlying distribution $p$ using $q$ .
  Note the KL divergence is not symmetric $p\leftrightarrow q$ and does not satisfy the triangle inequality as distance metrics.  
