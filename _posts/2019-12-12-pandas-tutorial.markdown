@@ -12,7 +12,9 @@ author: yotam
 description: A simple Pandas tutorial
 ---
 
-This is a small summary of pandas commands, it represents a small set of most needed DataFrame manipulation, in case a deeper dive in to the subject is wanted, check out this [much better tutorial](https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html).
+This is a small summary of pandas commands, this is where I keep my pandas snippets for a case of need.
+
+In case a deeper dive in to the subject is wanted, don't hasitate to check out this [much better tutorial](https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html). Let's jump in:
 
 Import pandas
 
@@ -34,11 +36,10 @@ my_df.to_json(path_or_buf=path_to_folder+'/my_df_saving_name.json')
 my_df = pd.to_json(path_or_buf=path_to_folder+'/my_df_saving_name.json')
 ```
 
-Add a row to DF (note the use of ` ignore_index=True`{.python} which tells the DataFrame to set the index as row enumeration, as in a simple list).
+Add a row to DF (note the use of ` ignore_index=True` which tells the DataFrame to set the index as row enumeration, as in a simple list).
 
 ```python
-my_df = my_df.append({'dir_name': dir_name, 'frame_name': frame_name,
-                      'false_positive': num_fp}, ignore_index=True)
+my_df = my_df.append({'dir_name': dir_name, 'frame_name': frame_name,'false_positive': num_fp}, ignore_index=True)
 ```
 
 Add a new column to DF:
@@ -53,18 +54,20 @@ Access a certain column of the DF:
 
 ```python
 my_series = my_df['dir_name']
+my_series = my_df.dir_name
+my_series = my_df.loc[:,'dir_name']
 ```
 
 A [series can be turned in to a list](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_numpy.html#pandas.DataFrame.to_numpy) using:
 
 ``` python
-series.to_numpy()
+nparray = series.to_numpy()
 ```
 
 Create [iterator](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.iterrows.html) of rows of DF:
 
 ```python
-my_df.iterrows()
+df_iterator = my_df.iterrows()
 ```
 
 [Collapse rows](https://pandas.pydata.org/pandas-docs/version/0.22/generated/pandas.core.groupby.DataFrameGroupBy.agg.html) and apply manipulation over duplicates:
@@ -102,7 +105,7 @@ my_df['false_positive'].value_counts()
 
 false positive value  -  number of occurences
         5    				   1218837
-        1  			       	    288189
+        1  			       	288189
         10   				    167364
         6   				    118085
         17  				    68663
@@ -123,7 +126,18 @@ my_df.head(3)
 my_df.bottom(3)
 ```
 
-### Saving metadata along with DF to .h5
+Running over rows of the DF
+
+Sometimes we wish to run over all objects in a specific DF, here is an example of working through
+
+```python
+for df_row_num in df.iterrows():
+    df_row = df.loc[df_row_num]
+
+    ~do something using row as a one liner DF
+```
+
+### Small helpers for saving metadata along with DF to .h5
 
 ```python
 def h5store(filename, df, **kwargs):
@@ -144,13 +158,3 @@ with pd.HDFStore(filename) as store:
     data, metadata = h5load(store)
 ```
 
-## Running over rows of the DF
-
-Sometimes we wish to run over all objects in a specific DF, here is an example of working through
-
-```python
-for df_row_num in range(df.shape[0]):
-    df_row = df.loc[df_row_num]
-
-    ~do something using row as a one liner DF
-```

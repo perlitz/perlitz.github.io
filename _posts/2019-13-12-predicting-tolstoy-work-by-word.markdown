@@ -14,7 +14,9 @@ author: yotam
 description: A simple character prediction excercise 
 ---
 
-  Begin with the imports:
+ Amazed by Andrej Karpathy's [great blog post](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) about language model learning, I set out to implement one of my own using Pytorch. As a rather experienced computer-vision deep learning practitioner, I found most of the diffeculty in the preprocession and tokanizing the data in comparison to the natural application of convolutional kernels on images. 
+
+First, we begin with the imports:
 
 ```python
 import numpy as np
@@ -26,11 +28,11 @@ import torch.nn.functional as F
 Loading the data:
 
 ```python
-with open('/content/drive/My Drive/Colab_Data/PT_udacity/anna.txt', 'r') as f:
+with open('path_to_data/anna.txt', 'r') as f:
     text = f.read()
 ```
 
-Tokanize the letters:
+Tokanize the letters is done using the char2int dictionary where every unique character is assigned a number. `encoded` is than the tokanized text.
 
 ```python
 chars = tuple(set(text))
@@ -40,7 +42,7 @@ char2int = {ch: ii for ii, ch in int2char.items()}
 encoded = np.array([char2int[ch] for ch in text])
 ```
 
-And one-hot encode them:
+A vectorized version is done via one-hot encoding where a zeros vector representing a certian character has a one in the location corresponding to the cahracter's assigned number. 
 
 ```python
 def one_hot_encode(arr, n_labels):
@@ -54,7 +56,7 @@ def one_hot_encode(arr, n_labels):
     return one_hot
 ```
 
-Next, mini-batching:
+Minibatches are created to hold a number of sequences and their corresponding target.
 
 ```python
 def get_batches(arr, batch_size, seq_length):
@@ -93,8 +95,8 @@ And defining the network:
 ```python
 class CharRNN(nn.Module):
     
-    def __init__(self, tokens, n_hidden=256, n_layers=2,
-                               drop_prob=0.5, lr=0.001):
+    def __init__(self, tokens, n_hidden=256, n_layers=2, drop_prob=0.5, lr=0.001):
+        
         super().__init__()
         self.drop_prob = drop_prob
         self.n_layers = n_layers
@@ -247,7 +249,7 @@ Once training is done, one may save the checkpoint:
 
 ```python
 # change the name, for saving multiple files
-model_name = '/content/drive/My Drive/Colab_Data/PT_udacity/rnn_20_epoch.net'
+model_name = 'path_to_save/rnn_20_epoch.net'
 
 checkpoint = {'n_hidden': net.n_hidden,
               'n_layers': net.n_layers,

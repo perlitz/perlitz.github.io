@@ -8,6 +8,7 @@ Tag:
 star: true
 category: blog
 author: yotam
+Hidden: true
 
 description: A list of movies I like
 ---
