@@ -1,3 +1,19 @@
+---
+
+title: "Build a package from your Python project"
+layout: post
+date: 2020-01-29 22:44
+image: /assets/images/markdown.jpg
+headerImage: false
+tag:
+- python
+star: false
+category: blog
+author: yotam
+description:  Build a package from your Python project
+
+---
+
 # Build a package from your Python project
 
 This explanation ignores the existence of test and package testing.
@@ -39,15 +55,14 @@ setuptools.setup(name='packagename',
       			 description='description',
       			 author='Yotam Perlitz',
       			 author_email='yotam.pe@samsung.com',
-      			                  packages=setuptools.find_packages(),
-                 include_package_data=True,
-                 py_module=[splitext(basename(path))[0] for path in 		glob('**/*.py',recursive=True)],
+      			 packages=setuptools.find_packages(),
       )
 ```
 
 The first five fields need no explanation, just keep the package name simple without any '-' of '_' since they may cause problems up ahead, if you find this interesting, check [this](https://packaging.python.org/specifications/core-metadata/#name) out.
 
-All the rest will make sure all files are properly imported.
+`packages=setuptools.find_packages()` will import every directory that has an `__init__.py` file down from the one setup.py is at, if you wish to import packages from different locations, you can use the `where=` argument in find packages to find packages in specific locations..
+
 
 ## Installation
 
