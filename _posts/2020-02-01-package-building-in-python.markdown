@@ -6,6 +6,7 @@ date: 2020-01-29 22:44
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:
+<<<<<<< HEAD:_posts/2020-02-01-package-building-in-python.markdown
 - python
 star: false
 category: blog
@@ -17,22 +18,33 @@ description:  Build a package from your Python project
 # Build a package from your Python project
 
 This explanation ignores the existence of test and package testing.
+=======
+- site building
+star: false
+category: blog
+author: yotam
+description: Build a package from your Python project
+---
+
+# Build a package from your own Python project
+>>>>>>> 088773c39e8daca56422ae98892bf78c6e3cca22:_posts/2020-01-29-package-building-in-python.markdown
 
 ## Structure
 
 First thing to do is to get your directory in order,  the structure of your python package directory should take the following form:
 
 ```
-├─ packagename
-│  ├─ __init__.py
-│  ├─ ...
-|  └─ ...
-│     └─ ...
-│  └─ tests
-│     └─ ...
-├─ .git
-├─ .gitignore
-└─ setup.py
+reponame
+	├─ packagename
+	│  ├─ __init__.py
+	│  ├─ ...
+  |   └─ ...
+  │     └─ ...
+  │  └─ tests
+  │     └─ ...
+  ├─ .git
+  ├─ .gitignore
+  └─ setup.py
 ```
 
 note that every directory must have an `__init__.py` file in order for it to be considered a module.
@@ -55,7 +67,12 @@ setuptools.setup(name='packagename',
       			 description='description',
       			 author='Yotam Perlitz',
       			 author_email='yotam.pe@samsung.com',
+<<<<<<< HEAD:_posts/2020-02-01-package-building-in-python.markdown
       			 packages=setuptools.find_packages(),
+=======
+      			                  packages=setuptools.find_packages(),
+                 include_package_data=True,
+>>>>>>> 088773c39e8daca56422ae98892bf78c6e3cca22:_posts/2020-01-29-package-building-in-python.markdown
       )
 ```
 
@@ -70,7 +87,7 @@ The first five fields need no explanation, just keep the package name simple wit
 
 Once the package is well structured, imports are fixed and `setup.py` is prepared, all that is left if to cd to the location of `setup.py` and hit `pip install -e .` this will install the package in develop mode so that you can change the code, if you do not want to change the code, drop the `-e` and the package will be installed in your virtual environment. 
 
-### From GitLab
+### From Origin
 
 Use the command:
 
@@ -81,14 +98,6 @@ pip install -e git+http://git@gitlab-srv/repoadress@branch#egg=packagename
 The `-e` means you can still change the content of the package while it is installed.
 
 If a specific tag is wanted, `@v2.1.0` can be also added for example as a tag
-
-Done forget to:
-
-```bash
-export {http,https,ftp}_proxy=http://dlp2-wcg01:8080 && export {HTTP,HTTPS}_PROXY=http://dlp2-wcg01:8080 && conda config --set ssl_verify false
-```
-
-before...
 
 ## Import issues
 
