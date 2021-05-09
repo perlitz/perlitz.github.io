@@ -87,18 +87,6 @@ The first five fields need no explanation, just keep the package name simple wit
 
 Once the package is well structured, imports are fixed and `setup.py` is prepared, all that is left if to cd to the location of `setup.py` and hit `pip install -e .` this will install the package in develop mode so that you can change the code, if you do not want to change the code, drop the `-e` and the package will be installed in your virtual environment. 
 
-### From Origin
-
-Use the command:
-
-```
-pip install -e git+http://git@gitlab-srv/repoadress@branch#egg=packagename
-```
-
-The `-e` means you can still change the content of the package while it is installed.
-
-If a specific tag is wanted, `@v2.1.0` can be also added for example as a tag
-
 ## Import issues
 
 In case import issues are coming your way, check out [this](https://chrisyeh96.github.io/2017/08/08/definitive-guide-python-imports.html) article which is great, in case you are still having problems [this](https://stackoverflow.com/questions/714063/importing-modules-from-parent-folder/11158224#11158224) might also be of help.

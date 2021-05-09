@@ -35,7 +35,7 @@ find ./ -name '*.xsls' -exec cp -prv '{}' '/path/to/targetDir/' ';'
 ### Find and delete by type
 
 ```basg
-find . -name ".RAW" -delete
+$ find . -name ".RAW" -delete
 ```
 
 ### WGET from google drive
@@ -49,5 +49,11 @@ wget --no-check-certificate -r 'https://docs.google.com/uc?export=download&id=1-
 ```bash
 /usr/local/cuda/bin/nvcc --version
 python -c "import torch; print(torch.version.cuda)"
+```
+
+### Add postfix
+
+```bash
+$ for i in *.png; do mv "$i" "${i%.*}_w300.png"; done 
 ```
 
