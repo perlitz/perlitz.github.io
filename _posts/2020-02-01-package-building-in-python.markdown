@@ -67,12 +67,9 @@ setuptools.setup(name='packagename',
       			 description='description',
       			 author='Yotam Perlitz',
       			 author_email='yotam.pe@samsung.com',
-<<<<<<< HEAD:_posts/2020-02-01-package-building-in-python.markdown
       			 packages=setuptools.find_packages(),
-=======
-      			                  packages=setuptools.find_packages(),
                  include_package_data=True,
->>>>>>> 088773c39e8daca56422ae98892bf78c6e3cca22:_posts/2020-01-29-package-building-in-python.markdown
+
       )
 ```
 
