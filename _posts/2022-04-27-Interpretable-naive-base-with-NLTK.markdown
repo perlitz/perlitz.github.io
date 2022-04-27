@@ -12,11 +12,9 @@ author: yotam
 description: Using naive Bayes for interpretable text classification
 ---
 
-# Interpretable Naive Bayes Classification and Feature Selection by information gain with NLTK
-
 This little tutorial will describe how to use NLTKs Naive Bayes Classifier to solve a simple text classification task, this is generally the first step in addressing a new text classification task from me since (1) if it works well, it is the most lightweight option computationally, (2) It requires little data relative to transformer based LM like RoBERTa (3) it is much more interpretable, as we will show, one can exactly understand what is going on under the hood. Now, as always, we start with the data.
 
-###### Dataset
+## Dataset
 
 The dataset we will use here is extracted from [Logic2Text](https://arxiv.org/abs/2004.14579), it contained a pairs of (statements, statement-logical-action) where the logical action can be one of the following: [ordinal, superlative, majority, unique, aggregation, comparative, count], their explanation can be found in the paper.
 
@@ -39,7 +37,7 @@ class2idx = {"ordinal": 0, "superlative": 1, "majority": 2, "unique": 3, "aggreg
 idx2class = {value: key for key, value in class2idx.items()}
 ```
 
-###### Preprocessing
+## Preprocessing
 
 Our simple preprocessing will only include the removal of punctuations and appending all remaining words to a single string, there are generally many other preprocessing one could make (that may be beneficial for naive babes) but we try to keep it simple here.
 
@@ -97,7 +95,7 @@ train_set = [(features(d, word_features), c) for (d,c) in train]
 test_set  = [(features(d, word_features), c) for (d,c) in test]
 ```
 
-###### Training
+## Training
 
 Once the sets are ready, we can create and train the NLTK classifier, and check its accuracy.
 
@@ -109,7 +107,7 @@ print(nltk.classify.accuracy(classifier, test_set))
 
 We got a score of 0.886 with about 20sec of training, not bad :) 
 
-###### Interpretation
+## Interpretation
 
 Now that we have a classifier that seems to work, the next step could be seeing what it learned, this could be valuable in order to make sure it didn’t exploit some weakness in the data and since it might make us better understand the data.
 
@@ -226,7 +224,7 @@ gains.to_csv(out_path, index=False)
 
 And the output table will take the following form:
 
-![image-20220427144620493](2022-04-27-Interpretable-naive-base-with-NLTK.assets/image-20220427144620493.png)
+![image-20220427144620493](/2022-04-27-Interpretable-naive-base-with-NLTK.assets/image-20220427144620493.png)
 
 The table could help us both apply feature extraction by information gain, define rules and just understand how the classifier works. 
 
