@@ -158,3 +158,41 @@ with pd.HDFStore(filename) as store:
     data, metadata = h5load(store)
 ```
 
+### Merge columns to a longer df
+
+```python
+import pandas as pd
+df = pd.read_csv('')
+
+df = df.fillna('None')
+df['A'] = df[['insight1','insight2','insight3','insight4']].values.tolist()
+df['B'] = df[['insight_type1','insight_type2','insight_type3','insight_type4']].values.tolist()
+df['C'] = df[['insight1_type_is_correct','insight2_type_is_correct','insight3_type_is_correct','insight4_type_is_correct']].values.tolist()
+
+df = df.explode(['A','B','C'])
+df = df.rename(columns={'A':'insight','B':'insight_type','C':'insight_type_is_correct'})
+df = df.loc[df.insight != 'None']
+df = df.loc[df.insight_type_is_correct != 'None']
+df.insight_type_is_correct = df.insight_type_is_correct.apply(lambda x: 1 if x=='yes' else 0)
+
+for i in range(len(df)):
+    print(f'\ninsight: {df.iloc[i].insight}\ninsight_type: {df.iloc[i].insight_type}\ncorrect?: {df.iloc[i].insight_type_is_correct}')
+```
+
+### Split to train/test/val
+
+```python
+import numpy as np
+df = pd.read_csv('/dccstor/yotamperlitz/statista/website_crawl/free/dataframes/statista100k_for_appen_insight_classification.csv')
+np.random.seed(0)
+train_msk = np.random.rand(len(df)) < 0.9
+train_df = df[train_msk]
+test_val_df = df[~train_msk]
+test_msk = np.random.rand(len(test_val_df)) < 0.5
+test_df = test_val_df[test_msk]
+val_df = test_val_df[~test_msk]
+train_df.to_csv('/dccstor/yotamperlitz/statista/website_crawl/free/dataframes/statista100k_train.csv')
+val_df.to_csv('/dccstor/yotamperlitz/statista/website_crawl/free/dataframes/statista100k_val.csv')
+test_df.to_csv('/dccstor/yotamperlitz/statista/website_crawl/free/dataframes/statista100k_test.csv')
+```
+

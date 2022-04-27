@@ -1,5 +1,4 @@
 ---
-
 title: "Python snippets"
 layout: post
 date: 2021-02-13 22:44
